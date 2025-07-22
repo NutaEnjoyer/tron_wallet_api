@@ -41,7 +41,7 @@ tests/                 # Тесты (или test_*.py в корне)
 ### 1. Клонируйте репозиторий
 
 ```sh
-git clone <your-repo-url>
+git clone https://github.com/NutaEnjoyer/tron_wallet_api.git
 cd tron-wallet-api
 ```
 
@@ -49,7 +49,7 @@ cd tron-wallet-api
 
 Пример:
 ```
-DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/testinfourhours
+DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/database
 TRONGRID_API_KEY=ваш_ключ
 ```
 
@@ -111,15 +111,6 @@ GET /api/wallets?skip=0&limit=10
 
 ---
 
-## 📦 Миграции БД
-
-Если используете Alembic:
-```sh
-alembic revision --autogenerate -m "Комментарий"
-alembic upgrade head
-```
-
----
 
 ## 📝 Переменные окружения
 
@@ -139,8 +130,3 @@ alembic upgrade head
 - pytest, pytest-asyncio
 - Docker, docker-compose
 
----
-
-## 📄 Лицензия
-
-MIT (или ваша лицензия)
